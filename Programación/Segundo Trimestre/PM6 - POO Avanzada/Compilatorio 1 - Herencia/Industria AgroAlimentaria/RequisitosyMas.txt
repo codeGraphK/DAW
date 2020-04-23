@@ -1,0 +1,10 @@
+toString
+set, get *
+main = gestionAgro
+dos frescos, tres refri, cinco congelados
+2 congelados por aire, 2 por agua, 1 nitrógeno
+
+LinkedList
+LinkedQueue
+ArrayList
+HashMap

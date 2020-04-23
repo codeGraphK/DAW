@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE clientes SYSTEM "clientes.dtd">
+<clientes>
+	<cliente idCliente="81422" dni="11111111" localidad="Madrid">
+		<nombre>Antonio</nombre>
+		<direcciones>
+			<direccion>
+				<ciudad>M�laga</ciudad>
+				<calle>Larios</calle>
+				<numero>5</numero>
+			</direccion>
+			<direccion>
+				<ciudad>Madrid</ciudad>
+				<calle>Alcal�</calle>
+				<numero>120</numero>
+			</direccion>
+		</direcciones>
+	</cliente>
+	<cliente idCliente="81555333" dni="22222222" sexo="Hombre">
+		<nombre>Jose Carlos</nombre>
+		<apellido1>Mart�nez</apellido1>
+	</cliente>
+	<cliente idCliente="81888" dni="33333333" sexo="Mujer">
+		<nombre>Josefa</nombre>
+		<apellido1>Mart�n</apellido1>
+		<apellido2>Fern�ndez</apellido2>
+	</cliente>
+</clientes>

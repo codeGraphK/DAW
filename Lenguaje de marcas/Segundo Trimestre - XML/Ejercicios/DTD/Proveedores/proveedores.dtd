@@ -1,0 +1,6 @@
+<!ELEMENT proveedores (proveedor+)>
+<!ELEMENT proveedor (nombre,productos,telefono?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>

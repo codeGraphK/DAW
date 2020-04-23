@@ -1,0 +1,9 @@
+read -p "Introduce el nombre del fichero: " ficheroIn
+if test -e $ficheroIn && test -r $ficheroIn; then
+echo "Se puede leer"
+cat $ficheroIn
+if test $? -eq 0; then
+echo "Se puede visualizar"
+fi
+fi
+

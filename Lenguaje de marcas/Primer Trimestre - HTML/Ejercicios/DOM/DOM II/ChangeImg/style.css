@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContenedor {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: #cae7f5;
+    width: 20%;
+    min-width: 205px;
+    height: 40%;
+    min-height: 210px;
+}
+
+#changerImg {
+    position: relative;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+}
+
+.botones {
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+    left: 21%;
+}
+
+.botones * {
+    width: 22.5%;
+}

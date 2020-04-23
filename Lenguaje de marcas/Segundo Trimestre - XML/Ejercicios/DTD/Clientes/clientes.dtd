@@ -1,0 +1,14 @@
+<!ELEMENT clientes (cliente+)>
+<!ELEMENT cliente (nombre, apellido1?, apellido2?, direcciones?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT direcciones (direccion+)>
+<!ELEMENT direccion (ciudad, calle, numero)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ATTLIST cliente idCliente CDATA #REQUIRED>
+<!ATTLIST cliente dni CDATA #REQUIRED>
+<!ATTLIST cliente localidad CDATA #IMPLIED>
+<!ATTLIST cliente sexo (Hombre|Mujer) #IMPLIED>

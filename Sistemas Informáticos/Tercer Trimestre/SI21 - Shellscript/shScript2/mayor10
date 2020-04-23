@@ -1,0 +1,7 @@
+read -p "Ingresa un número: " numIn
+if test $numIn -gt 10
+then
+echo demasiado grande
+else
+echo menor o igual que 10
+fi

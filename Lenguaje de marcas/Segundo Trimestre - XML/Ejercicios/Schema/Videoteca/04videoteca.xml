@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<videoteca xmlns="http://www.videoteca.es" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.videoteca.es videoteca.xsd">
+    <cd id="x001">
+        <video type="pelicula" titulo="La monda">
+            <director></director>
+            <actores>
+                <actor nombre="a" genero="F" fechanacimiento="2001-12-28" />
+                <actor nombre="b" genero="M" fechanacimiento="2001-12-28" />
+            </actores>
+            <duracion></duracion>
+        </video>
+        <video type="serie" titulo="La monda conti">
+            <director></director>
+            <actores>
+                <actor nombre="c" genero="F" fechanacimiento="2001-12-28" />
+                <actor nombre="d" genero="M" fechanacimiento="2001-12-28" />
+            </actores>
+            <lista>
+                <episodio id="x101" type="piloto">
+                    <titulo></titulo>
+                    <duracion></duracion>
+                    <estado estrenado="si" />
+                    <fechaestreno>2001-12-28</fechaestreno>
+                </episodio>
+            </lista>
+        </video>
+    </cd>
+</videoteca>

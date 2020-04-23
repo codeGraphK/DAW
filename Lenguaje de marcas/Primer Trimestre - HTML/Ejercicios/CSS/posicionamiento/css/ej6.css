@@ -1,0 +1,45 @@
+body {
+    background-color: yellow;
+}
+table {
+    position: fixed;
+    left: 82%;
+    top: 15%;
+    background-color: aqua;
+}
+
+.Icol {
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    left: 15%;
+    background: #e6a8ff;
+}
+
+.Icol * {
+    outline: solid 5px #008800;
+}
+
+.IIcol * {
+    outline: solid 5px #880000;
+}
+
+.IIcol {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    left: 46%;
+    background: #ff915f;
+}
+
+img {
+    height: 15%;
+    position: relative;
+    left: 38%;
+}
+
+#myimg {
+    position: fixed;
+    top: 47%;
+    left: 42%;
+}

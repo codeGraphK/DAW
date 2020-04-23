@@ -1,0 +1,4 @@
+resultado1=`expr $1 + $2`
+resultado2=`expr $1 \* $2 + $3`
+echo "El valor del resultado1 es: $resultado1"
+echo "El valor del resultado2 es: $resultado2"

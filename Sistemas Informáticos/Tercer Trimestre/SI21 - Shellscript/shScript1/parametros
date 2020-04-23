@@ -1,0 +1,2 @@
+echo "Este es el valor del 1º parámetro: $1"
+echo "Este es el valor del 2º parámetro: $2"

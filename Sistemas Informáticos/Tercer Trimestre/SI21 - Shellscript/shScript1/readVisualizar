@@ -1,0 +1,3 @@
+echo "Introduce tu nombre:"
+read nombre
+echo "El nombre que has introducido es: $nombre"

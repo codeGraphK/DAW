@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns="http://www.clientes.es" targetNamespace="http://www.clientes.es" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="clientes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cliente" type="clienteByDef" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="clienteByDef">
+        <xs:sequence>
+            <xs:element name="nombre" type="nameFormat" />
+            <xs:element name="apellido1" type="nameFormat" minOccurs="0" />
+            <xs:element name="apellido2" type="nameFormat" minOccurs="0" />
+            <xs:element name="direcciones" type="direcctionsFormat" minOccurs="0" />
+        </xs:sequence>
+        <xs:attribute name="idCliente" use="required" type="idFormat" />
+        <xs:attribute name="dni" use="required" type="dniFormat" />
+        <xs:attribute name="localidad" type="xs:string" />
+        <xs:attribute name="sexo" type="sexoFormat" />
+    </xs:complexType>
+
+    <!-- <xs:complexType name="clienteDir">
+        <xs:complexContent>
+            <xs:extension base="clienteByDef">
+                <xs:sequence>
+                    <xs:element name="direcciones" type="direcctionsFormat" />
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType> -->
+
+
+    <xs:simpleType name="nameFormat">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="15" />
+            <xs:whiteSpace value="collapse" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="dniFormat">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]{8})[a-z]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idFormat">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="[A-Z]([0-9]{7})" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="sexoFormat">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Hombre" />
+            <xs:enumeration value="Mujer" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoFormat">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="direcctionsFormat">
+        <xs:sequence>
+            <xs:element name="direccion" type="direccFormat" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="numFormat">
+        <xs:restriction base="xs:integer">
+            <xs:minExclusive value="0"></xs:minExclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="direccFormat" mixed="true">
+        <xs:sequence>
+            <xs:element name="ciudad" type="xs:string" />
+            <xs:element name="calle" type="xs:string" />
+            <xs:element name="numero">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="numFormat">
+                            <xs:attribute name="tipo" type="tipoFormat" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

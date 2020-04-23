@@ -1,0 +1,599 @@
+/* 
+Es un archivo CSS que contiene todos los estilos de las tres páginas,
+por ello la longitud de éste. Normalmente hubiera preferido hacerlo en
+3 para evitar que se viera así de tedioso buscar n.n <3
+
+Tengo dudas referente a lo que permites y no, en cuanto a que todo debe 
+ser según lo que hemos dado en clase. Ya que fuera de éstos conocimientos,
+en esta hoja de estilos está lo de linear-gradient(), el utilizar la
+medida em para el texto y vh para la altura de ciertos elementos.
+
+Utilicé longitudes mínimas para evitar que se viera mal al redimensionar 
+la ventana. Espero no te moleste haber usado unos cuantos margin en vez 
+del padding para evitar que éste me aumentara el tamaño de la sección.
+
+Utilicé float para insertar las imágenes junto con un párrafo y que
+fluyeran con éste, no creo que te moleste n.n
+*/
+
+/* ---- Estilos Generales ---- */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Microsoft JhengHei UI';
+}
+
+body {
+    height: 85.5vh;
+    min-width: 751px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fixed {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.fixed h1 {
+    position: relative;
+    text-align: center;
+    font-family: 'Coco Gothic Alternate', sans-serif;
+}
+
+.fixed header {
+    position: relative;
+    height: 11vh;
+    width: 100%;
+    min-height: 100px;
+}
+
+.fixed header .cabecera {
+    position: absolute;
+    background-color: #2F707E;
+    width: 100%;
+    height: 100%;
+}
+
+.cabecera #nameSitio {
+    position: absolute;
+    height: 60%;
+    width: 20%;
+    min-width: 180px;
+    top: 20%;
+    left: 40%;
+    border-radius: 20px;
+}
+
+
+#nameSitio h1 {
+    top: 25%;
+    color: #fffffa;
+    font-size: 2.4em;
+}
+
+.fixed nav {
+    position: fixed;
+    background-color: #1A535C;
+    height: 100%;
+    width: 20%;
+    min-width: 150px;
+    left: 0;
+}
+
+.fixed nav #listaEnlaces {
+    position: absolute;
+    height: 45%;
+    min-height: 190px;
+    width: 85%;
+    top: 5%;
+    left: 7%;
+    border-radius: 20px;
+}
+
+#items {
+    list-style: none;
+    color: #fffffa;
+}
+
+#items li {
+    position: absolute;
+    font-size: 1em;
+    background-color: #000;
+    height: 30%;
+    min-height: 62px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+}
+
+#item1 {
+    top: 0;
+    background: url(img/fondoIndex.jpg);
+    background-size: contain;
+    background-position-x: right;
+}
+
+#item2 {
+    top: 35%;
+    background: url(img/fondoList.jpg);
+    background-size: contain;
+    background-position-x: right;
+}
+
+#item3 {
+    top: 70%;
+    background: url(img/fondoGroups.jpg);
+    background-size: contain;
+    background-position-x: right;
+}
+
+#items span {
+    position: absolute;
+    background: linear-gradient(to right, #028090 70%, #ffffff00 100%);
+    width: 60%;
+    height: 100%;
+    padding: 5% 0 5% 5%;
+}
+
+#items #item2 span {
+    background: linear-gradient(to right, #2D3142 70%, #ffffff00 100%);
+}
+
+#items #item3 span {
+    background: linear-gradient(to right, #783775 70%, #ffffff00 100%);
+}
+
+#items li:hover {
+    height:32%;
+}
+
+.contenedor {
+    position: relative;
+    height: 100%;
+    top: 100px;
+    z-index: -1;
+}
+.contenedor .main {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    min-width: 785px;
+    right: 0;
+}
+
+/* ----- Estilos Específicos ---- */
+
+/* -- Index -- */
+
+#index {
+    background: fixed url(img/fondoIndex.jpg);
+    background-size: cover;
+    background-position-x: 10vw;
+}
+
+#index .containImg {
+    position: absolute;
+    top: 15%;
+    right: 25%;
+    height: 70%;
+    min-height: 350px;
+    width: 50%;
+}
+
+#index .containImg img {
+    position: absolute;
+    width: 35%;
+    border-radius: 50%;
+}
+
+#shark {
+    bottom: 0;
+    left: 0;
+}
+
+#hole {
+    top: 0;
+    right: 32.5%;
+}
+
+#trench {
+    right: 0;
+    bottom: 0;
+}
+
+#index .hadalZone {
+    position: absolute;
+    background: linear-gradient(to bottom, #05064900 0%, #050649 100%);
+    top: 80%;
+    width: 100%;
+    height: 150%;
+    overflow: hidden;
+}
+
+#index .hadalZone .hadalDescript {
+    position: absolute;
+    width: 85%;
+    height: 37.5%;
+    right: 7.5%;
+    bottom: 2.5%;
+}
+
+.hadalDescript .hadalInside {
+    position: absolute;
+    border-radius: 20px;
+}
+
+#hadalTtl {
+    background-color: #00BFB2;
+    width: 22.5%;
+    min-width: 164px;
+    height: 15%;
+    min-height: 38px;
+}
+
+#hadalTtl h1 {
+    position: relative;
+    text-align: center;
+    top: 25%;
+    font-family: 'Coco Gothic Alternate', sans-serif;
+    color: #fff;
+    font-size: 1.8em;
+}
+
+#hadalP {
+    width: 100%;
+    min-width: 676px;
+    height: 80%;
+    bottom: 0;
+    vertical-align: middle;
+}
+
+#hadalP p {
+    position: relative;
+    margin: 3%;
+    color: #fefefe;
+}
+
+#nave {
+    position: relative;
+    float: right;
+    margin: 2% 2% 1% 1%;
+    width: 15%;
+    border-radius: 100%;
+}
+
+#graph {
+    float: left;
+    margin: 3% 2% 1% 3%;
+    height: 61%;
+    border-radius: 15px;
+}
+
+/* -- List -- */
+
+#list {
+    background: fixed url(img/fondoList.jpg);
+    background-size: cover;
+    background-position-x: 10vw;
+}
+
+#list .fixed header .cabecera {
+    background-color: #2D3142;
+}
+
+#list #nameSitio h1 {
+    color: #04727D;
+}
+
+#list .fixed nav {
+    background-color: #485665;
+}
+
+.main .sharkList {
+    position: relative;
+    height: 35%;
+    min-height: 207px;
+    width: 80%;
+    min-width: 710px;
+    margin: 5% 10%;
+    border-radius: 20px;
+}
+
+.main .sharkList img {
+    position: relative;
+    border-radius: 100%;
+    height: 75%;
+    top: 12.5%;
+    left: 4%;
+}
+
+.main .sharkList .listTexto {
+    position: absolute;
+    height: 60%;
+    width: 70%;
+    right: 4%;
+    top: 20%;
+    border-radius: 20px;
+    letter-spacing: 2.5px;
+}
+
+.main .sharkList .listTexto h2 {
+    position: absolute;
+    margin: 2%;
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+}
+
+.main .sharkList .listTexto p {
+    position: absolute;
+    bottom: 0;
+    margin: 2%;
+    line-height: 100%;
+}
+
+.main #shark1 {
+    background-color: #2C3A3A2c;
+}
+
+.main #shark1 .listTexto {
+    background-color: #2C3A3A;
+}
+
+.main #shark1 h2 {
+    color: #A4A284;
+    font-family: 'Courier New';
+}
+
+.main #shark1 p {
+    font-family: 'Courier New';
+    color: #AFB3A4;
+}
+
+/* ------------------- */
+
+.main #shark2 {
+    background-color: #1E24352c;
+}
+
+.main #shark2 .listTexto {
+    background-color: #1E2435;
+}
+
+.main #shark2 h2 {
+    font-family: 'Franklin Gothic Medium';
+    color: #9ba7d4;
+}
+
+.main #shark2 p {
+    font-family: 'Franklin Gothic Medium';
+    color: #9FA99C;
+}
+
+/* --------------- */
+
+.main #shark3 {
+    background-color: #4A47342c;
+}
+
+.main #shark3 .listTexto {
+    background-color: #4A4734;
+}
+
+.main #shark3 h2 {
+    font-family: 'Gill Sans MT';
+    color: #D2BE8F;
+}
+
+.main #shark3 p {
+    font-family: 'Gill Sans MT';
+    color: #BDAC83;
+}
+
+/* --------------------- */
+
+.main #shark4 {
+    background-color: #2546372c;
+}
+
+.main #shark4 .listTexto {
+    background-color: #254637;
+}
+
+.main #shark4 h2 {
+    font-family: sans-serif;
+    color: #AFF7EC;
+}
+
+.main #shark4 p {
+    font-family: sans-serif;
+    color: #8BE4DE;
+}
+
+/* -------------------- */
+
+.main #shark5 {
+    background-color: #04649C2c;
+}
+
+.main #shark5 .listTexto {
+    background-color: #04649C;
+}
+
+.main #shark5 h2 {
+    font-family: fantasy;
+    color: #cbf4dc;
+}
+
+.main #shark5 p {
+    font-family: fantasy;
+    color: #c1bdff;
+}
+
+/* ------------------- */
+
+.main #shark6 {
+    background-color: #042D482c;
+}
+
+.main #shark6 .listTexto {
+    background-color: #042D48;
+}
+
+.main #shark6 h2 {
+    font-family: serif;
+    color: #9FE9EC;
+}
+
+.main #shark6 p {
+    font-family: serif;
+    color: #9fd5f9;
+}
+
+/* ------------------------ */
+
+.main #shark7 {
+    background-color: #2F66752c;
+}
+
+.main #shark7 .listTexto {
+    background-color: #2F6675;
+}
+
+.main #shark7 h2 {
+    font-family: monospace;
+    color: #75CFD3;
+}
+
+.main #shark7 p {
+    font-family: monospace;
+    color: #F7FFF7;
+}
+
+/* -- Grupos -- */
+
+#groups {
+    background: fixed url(img/fondoGroups.jpg);
+    background-size: cover;
+    background-position-x: 10vw;
+}
+
+#groups .fixed header .cabecera {
+    background-color: #783775;
+}
+
+#groups #nameSitio h1 {
+    color: #F5E2C8;
+}
+
+#groups .fixed nav {
+    background-color: #351749;
+}
+
+.main .holeGroups {
+    position: relative;
+    height: 75%;
+    min-height: 408px;
+    width: 80%;
+    min-width: 845px;
+    margin: 5% 10%;
+    color: #DCD3A8;
+}
+
+.holeGroups article {
+    border-radius: 20px;
+}
+
+.main .holeGroups .leftGroup {
+    position: absolute;
+    background-color: #eb7347;
+    width: 44%;
+    height: 18%;
+    top: 10%;
+    left: 6.25%;
+    z-index: 2;
+}
+
+#titulo {
+    position: relative;
+    height: fit-content;
+    text-align: center;
+    top: 25%;
+}
+
+#titulo .cTitulo {
+    font-size: 2.5em;
+    font-family: 'Coco Gothic Alternate', sans-serif;
+}
+
+#hole2 .cTitulo, #hole3 .cTitulo {
+    font-size: 1.5em;
+}
+
+#hole2 #titulo {
+    top: 35%;
+}
+
+.main .holeGroups .centerG {
+    position: absolute;
+    background-color: #98C1D9;
+    top: 17%;
+    width: 70%;
+    height: 62.5%;
+    left: 15%;
+    z-index: 0;
+}
+
+#parrafo {
+    position: absolute;
+    background-color: #811bbd;
+    height: 70%;
+    width: 75%;
+    bottom: 5%;
+    left: 3%;
+}
+
+#parrafo p, #parrafo ul {
+    position: relative;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    font-size: 1em;
+}
+
+#parrafo li {
+    list-style: none;
+}
+
+.main .holeGroups .rightGroup {
+    position: absolute;
+    background: linear-gradient(0deg, #5c1386 10%, #fc9069 100%);
+    width: 22%;
+    height: 42.9%;
+    right: 6.25%;
+    bottom: 10%;
+    z-index: 0;
+    border-radius: 100%;
+}
+
+#subR1 {
+    position: absolute;
+    border-radius: 100%;
+    width: 60%;
+    height: 60%;
+    top: 8%;
+    left: 20%;
+}
+
+#subR2 {
+    position: relative;
+    text-align: center;
+    top: 75%;
+}

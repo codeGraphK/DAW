@@ -1,0 +1,4 @@
+read -p "Introduce el nombre archivo y ruta a donde copiar: " archivoIn rutaIn
+if test -e $archivoIn && test -f $archivoIn && test -r $archivoIn && test -e $rutaIn; then
+cp $archivoIn $rutaIn
+fi

@@ -1,0 +1,7 @@
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre, precio, procedencia)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT procedencia (provincia+)>
+<!ELEMENT provincia (#PCDATA)>
+<!ATTLIST producto idProducto ID #REQUIRED>

@@ -1,0 +1,6 @@
+echo "Deseas entrar en el bucle (S/N)"; read letra
+while test $letra = "S";
+do
+echo "Continuas dentro del while";
+echo "¿Deseas continuar?"; read letra
+done

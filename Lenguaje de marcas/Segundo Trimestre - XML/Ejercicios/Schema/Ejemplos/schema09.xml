@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<someElements xmlns="http://www.someElements.es"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.someElements.es schema09.xsd">
+	
+	<!--Elemento Simple-->
+	<simpleElement>Hola Mundo</simpleElement>
+	
+	
+	<!--Elemento Simple que puede tener numeros de 10 a 1000 (incluidos) metodo 1 -->
+	<simpleElementRestriction1>880</simpleElementRestriction1>
+	
+	
+	<!--Elemento Complejo vacio con atributos-->
+	<emptyComplexElementWithAtributes att1="valor" att2="10"/>
+	
+	
+	<!-- elemento Complejo que contiene solo otros elementos -->
+	<complexElementContainingElements>
+		<containedSimpleElement>cadena cualquiera</containedSimpleElement>
+		<containedSimpleElement2>22</containedSimpleElement2>
+	</complexElementContainingElements>
+	
+	
+	<!-- elemento Complejo(con atributos)que contiene solo otros elementos -->
+	<complexElementContainingElementsWithAttributes att1="valor" att2="10">
+	
+		<!--containedSimpleElement es un elemento simple-->
+		<containedSimpleElement>cadena cualquiera</containedSimpleElement>
+		<!--containedEmptyComplexElement es un elemento complejo vaciocon atributos-->
+		<containedEmptyComplexElement containedFirstAttribute="valor" containedSecondAttribute="10"/>
+		
+	</complexElementContainingElementsWithAttributes>
+	
+	<!-- elemento Complejo que contiene otros elementos y TEXTO -->
+	<complexElementContainingElementsAndText>
+		Este es texto contenido en el elemento
+		<containedSimpleElement>cadena cualquiera</containedSimpleElement>
+		<containedSimpleElement2>22</containedSimpleElement2>
+	</complexElementContainingElementsAndText>
+	
+	<!-- elemento complejo con atributos que contiene solo texto -->
+	<complexElementOnlyText attrib1="asdasd">
+		esto es texto contenido en el elemento
+	</complexElementOnlyText>
+	
+	<complexElementOnlyText2 attrib1="asdasd">
+		esto es texto contenido en el elemento
+	</complexElementOnlyText2>
+	
+	
+</someElements>

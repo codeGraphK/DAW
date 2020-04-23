@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ejercicio3.es" targetNamespace="http://www.ejercicio3.es" elementFormDefault="qualified" xmlns:kk>
+    <xs:element name="CATALOG" />
+
+    <xs:complexType name="catalogType">
+        <xs:sequence>
+            <xs:element name="PRODUCT" maxOccurs="unbounded" type="normalTextType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="normalTextType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="15" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="productType">
+        <xs:sequence>
+            <xs:element name="SPECIFICATIONS" maxOccurs="unbounded" type="specificationsType" />
+            <xs:element name="OPTIONS" minOccurs="0" type="optionsType" />
+            <xs:element name="PRICE" maxOccurs="unbounded" type="priceType" />
+            <xs:element name="NOTES" minOccurs="0" type="normalTextType" />
+        </xs:sequence>
+        <xs:attributeGroup ref="productAttributes" />
+    </xs:complexType>
+
+    <xs:attributeGroup name="productAttributes">
+        <xs:attribute name="NAME" type="normalTextType" />
+        <xs:attribute name="CATEGORY" default="HandTool">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="HandTool" />
+                    <xs:enumeration value="Table" />
+                    <xs:enumeration value="Shop-Professional" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="PARTNUM" type="normalTextType" />
+        <xs:attribute name="PLANT" default="Chicago">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="Pittsburgh" />
+                    <xs:enumeration value="Milwaukee" />
+                    <xs:enumeration value="Chicago" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="INVENTORY" default="InStock">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="InStock"></xs:enumeration>
+                    <xs:enumeration value="Backordered"></xs:enumeration>
+                    <xs:enumeration value="Discontinued"></xs:enumeration>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+
+    <xs:complexType name="specificationsType">
+        <xs:simpleContent>
+            <xs:extension base="normalTextType">
+                <xs:attribute name="WEIGHT" type="normalTextType" />
+                <xs:attribute name="POWER" type="normalTextType" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="optionsType">
+        <xs:simpleContent>
+            <xs:extension base="normalTextType">
+                <xs:attribute name="FINISH" default="Matte">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Metal" />
+                            <xs:enumeration value="Polished" />
+                            <xs:enumeration value="Matte" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute name="ADAPTER" default="Included">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Included" />
+                            <xs:enumeration value="Optional" />
+                            <xs:enumeration value="NotApplicable" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute name="CASE" default="HardShell">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="HardShell" />
+                            <xs:enumeration value="Soft" />
+                            <xs:enumeration value="NotApplicable" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="priceType">
+        <xs:simpleContent>
+            <xs:extension base="normalTextType">
+                <xs:attribute name="MSRP" type="normalTextType" />
+                <xs:attribute name="WHOLESALE" type="normalTextType" />
+                <xs:attribute name="STREET" type="normalTextType" />
+                <xs:attribute name="SHIPPING" type="normalTextType" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>

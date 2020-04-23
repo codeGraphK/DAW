@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ejercicio2.es" targetNamespace="http://www.ejercicio2.es" elementFormDefault="qualified">
+    <xs:element name="NEWSPAPER" />
+
+    <xs:complexType name="newspaperType">
+        <xs:sequence>
+            <xs:element name="ARTICLE" maxOccurs="unbounded" type="articleType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="articleType">
+        <xs:sequence>
+            <xs:element name="HEADLINE" type="normalTextType" />
+            <xs:element name="BYLINE" type="normalTextType" />
+            <xs:element name="LEAD" type="normalTextType" />
+            <xs:element name="BODY" type="normalTextType" />
+            <xs:element name="NOTES" type="normalTextType" />
+        </xs:sequence>
+        <xs:attributeGroup ref="articleAttributes" />
+    </xs:complexType>
+
+    <xs:simpleType name="normalTextType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z0-9]+" />
+            <xs:maxLength value="15" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:attributeGroup name="articleAttributes">
+        <xs:attribute name="AUTHOR" type="normalTextType" use="required" />
+        <xs:attribute name="EDITOR" type="normalTextType" />
+        <xs:attribute name="DATE" type="normalTextType" />
+        <xs:attribute name="EDITION" type="normalTextType" />
+    </xs:attributeGroup>
+</xs:schema>

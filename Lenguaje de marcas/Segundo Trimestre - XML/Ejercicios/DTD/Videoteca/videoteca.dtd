@@ -1,0 +1,23 @@
+<!ELEMENT videoteca (cd+)>
+<!ELEMENT cd (video+)>
+<!ELEMENT video (director, actores?, duracion?, lista?)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT actores (actor+)>
+<!ELEMENT actor EMPTY>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT lista (episodio+)>
+<!ELEMENT episodio (titulo, duracion, estado, fechaestreno)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT estado EMPTY>
+<!ELEMENT fechaestreno (#PCDATA)>
+
+<!ATTLIST cd id ID #REQUIRED>
+<!ATTLIST video type (pelicula|serie) "video">
+<!ATTLIST video titulo CDATA #REQUIRED>
+<!ATTLIST actor nombre CDATA "nombre">
+<!ATTLIST actor genero (F|M|X) "X">
+<!ATTLIST actor fechanacimiento CDATA #IMPLIED>
+<!ATTLIST episodio id ID #REQUIRED>
+<!ATTLIST episodio type (piloto|normal|extra|final) #REQUIRED>
+<!ATTLIST estado estrenado (si|no) #REQUIRED>

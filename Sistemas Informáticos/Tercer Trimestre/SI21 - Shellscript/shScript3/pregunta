@@ -1,0 +1,6 @@
+read -p "¿Quien descubrio America?" respuesta
+if test $respuesta = Col´on; then
+echo "es correcto"
+else
+echo "no es correcto"
+fi

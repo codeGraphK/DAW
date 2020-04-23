@@ -1,0 +1,7 @@
+Trayecto=3280
+read -p "Desea un billete de ida y vuelta?(y/n)" answer
+if test $answer = y; then
+echo "El importe final es: `expr $Trayecto \* 2 \* 80 / 100`"
+else
+echo "El importe final es: $Trayecto"
+fi

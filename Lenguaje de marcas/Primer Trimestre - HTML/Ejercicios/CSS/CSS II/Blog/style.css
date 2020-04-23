@@ -1,0 +1,134 @@
+* {
+    margin: auto;
+    padding: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #d3dedf;
+}
+
+a:link {
+    color: #fffdfd;
+}
+
+a:visited {
+    color: #08c5ac;
+}
+
+h2, h3 {
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.contenedor {
+    position: relative;
+    margin-top: 0.5%;
+    border: solid 2px #318a56;
+    width: 45%;
+}
+
+.contenedor-body {
+    position: relative;
+}
+
+/* Cabecera */
+
+header {
+    background-color: #52eb92;
+    padding: 5% 2%;
+}
+
+header h1 {
+    position: relative;
+    /* left: 3%; */
+}
+
+header .form {
+    position: absolute;
+    padding: 2%;
+    top: 0;
+    right: 0;
+}
+
+nav {
+    background-color: #52eb92;
+    text-align: center;
+    padding: 1% 0%;
+}
+
+nav a{
+    margin: 5%;
+}
+
+/* Cuerpo */
+
+.contenedor-body > section, .contenedor-body > aside {
+    position: absolute;
+    padding: 0%;
+}
+
+.panelIzq, .others {
+    width: 25%;
+}
+
+.panelIzq {
+    top: 0;
+    z-index: 2;
+}
+
+.panelIzq > section {
+    background-color: #82ffb6;
+}
+
+.panelIzq > section, .others > section {
+    border: solid 1px;
+    margin: 2% 0%;
+    padding: 10% 7%;
+}
+
+.articulo {
+    width: 48%;
+    left: 26%;
+}
+
+.articulo > section {
+    background-color: #eba952;
+    border: solid 1px;
+    padding: 10% 5%;
+    margin: 2% 0%;
+}
+
+.articulo img {
+    float: left;
+    margin-right: 3%;
+}
+
+.articulo p, .others p {
+    margin-bottom: 2.5%;
+}
+
+.others {
+    right: 0%;
+}
+
+.others > section {
+    background-color: #e95555;
+}
+
+/* Pie */
+
+footer {
+    background-color: #9952eb;
+    border: solid 1px #5b318b;
+    position: fixed;
+    bottom: 0;
+    width: 45%;
+    text-align: center;
+    /*bottom: 0;
+    padding: 0.1% 0; */
+}
+
+footer a{
+    margin: 0% 2%;
+}

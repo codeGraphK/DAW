@@ -1,0 +1,6 @@
+read -p "Introduce dos numeros: " numeroUno numeroDos
+if test $numeroUno -lt $numeroDos; then
+echo "$numeroUno"
+else
+echo "$numeroDos"
+fi

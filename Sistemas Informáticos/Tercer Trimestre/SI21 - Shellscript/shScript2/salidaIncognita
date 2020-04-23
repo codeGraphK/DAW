@@ -1,0 +1,18 @@
+pwd
+echo $?
+pepe
+echo $?
+cp
+echo $?
+cat /etc/passwd
+echo $?
+cd/;mkdir \mio
+echo $?
+cd /;cat > intento
+echo $?
+cd
+echo $?
+true
+echo $?
+false
+echo $?

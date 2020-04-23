@@ -1,0 +1,10 @@
+var1=7
+var2="PRUEBA"
+if test $var1 -eq 7;
+then
+echo "$var1";
+fi
+if test $var2 = "PRUEBA";
+then
+echo "$var2";
+fi

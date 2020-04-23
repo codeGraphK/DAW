@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "XE",
+            "dialect": "OracleDB",
+            "name": "mainBD",
+            "password": "4N1m3Flv01",
+            "port": 1521,
+            "server": "localhost",
+            "username": "KLEONARDORF"
+        }
+    ]
+}

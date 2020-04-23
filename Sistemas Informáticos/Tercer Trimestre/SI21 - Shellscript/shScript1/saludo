@@ -1,0 +1,16 @@
+echo $1
+echo El nombre del guión es $0
+echo El conjunto de argumentos es $*
+I=2
+J=3
+echo  "El valor de I + J es: `expr $I + $J`"
+I=`expr $I + 1`
+K=`expr $I + $J`
+echo "Ahora el valor de I es: $I, y el valor de K es: $K"
+read -p "Ingresa un número: " number
+if test `expr $number % 2` -eq 0
+then
+echo El número que ingresaste es par
+else
+echo El número que ingresaste es impar
+fi

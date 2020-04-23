@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="calcStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="calculadora">
+        <article class="resultado">
+            <span class="result" id="result"></span>
+        </article>
+        <section class="digits">
+            <article class="left">
+                <span class="num fstRow" id="siete" onclick="subir(this.id);">7</span>
+                <span class="num sndRow" id="cuatro" onclick="subir(this.id);">4</span>
+                <span class="num trdRow" id="uno" onclick="subir(this.id);">1</span>
+                <span class="num lstRow" id="cero" onclick="subir(this.id);">0</span>
+            </article>
+            <article class="center">
+                <span class="num fstRow" id="ocho" onclick="subir(this.id);">8</span>
+                <span class="num sndRow" id="cinco" onclick="subir(this.id);">5</span>
+                <span class="num trdRow" id="dos" onclick="subir(this.id);">2</span>
+                <span class="lstRow" id="c" onclick="erase()">C</span>
+            </article>
+            <article class="right">
+                <span class="num fstRow" id="nueve" onclick="subir(this.id);">9</span>
+                <span class="num sndRow" id="seis" onclick="subir(this.id);">6</span>
+                <span class="num trdRow" id="tres" onclick="subir(this.id);">3</span>
+                <span class="lstRow"></span>
+            </article>
+        </section>
+        <section class="opers">
+            <span class="fstRow" id="multi" onclick="subirop(this.id);">*</span>
+            <span class="sndRow" id="divi" onclick="subirop(this.id);">/</span>
+            <span class="trdRow" id="suma" onclick="subirop(this.id);">+</span>
+            <span class="lstRow" id="resta" onclick="subirop(this.id);">-</span>
+        </section>
+        <article class="igual" id="igual" onclick="resultado();">
+            <span>=</span>
+        </article>
+    </section>
+    <script src="calcMain.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+test -r cadenas
+echo $?
+test -w cadenas
+echo $?
+test -x cadenas
+echo $?

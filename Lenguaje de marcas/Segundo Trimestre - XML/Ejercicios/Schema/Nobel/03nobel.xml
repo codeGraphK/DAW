@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ganadores xmlns="http://www.nobel.es" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nobel.es nobel.xsd">
+    <nobel id="x001">
+        <ganador>
+            <nombre>Pierre Curie</nombre>
+            <nacionalidad>frances</nacionalidad>
+        </ganador>
+        <ganador>
+            <nombre>Marie Curie</nombre>
+            <nacionalidad>frances</nacionalidad>
+            <nacionalidad>polaca</nacionalidad>
+        </ganador>
+        <area>Física</area>
+        <anio>1903</anio>
+        <descripcion>Investigaciones sobre la radioactividad</descripcion>
+    </nobel>
+    <nobel id="x002">
+        <ganador>
+            <nombre>Akira Suzuki</nombre>
+            <nacionalidad>japones</nacionalidad>
+        </ganador>
+        <area>Química</area>
+        <descripcion>Reacciones de acoplamiento cruzado catalizadas por paladio en síntesis orgánica</descripcion>
+    </nobel>
+    <nobel id="x003">
+        <ganador>
+            <nombre>Severo Ochoa</nombre>
+            <nacionalidad>español</nacionalidad>
+            <nacionalidad>estadounidense</nacionalidad>
+        </ganador>
+        <area>Medicina</area>
+        <anio>1959</anio>
+        <descripcion>Descubrimiento de los mecanismos de la síntesis biológica de los ácidos ribonucleico y desoxirribonucleico</descripcion>
+    </nobel>
+    <nobel id="x004">
+        <ganador>
+            <nombre>Albert Einstein</nombre>
+            <nacionalidad>alemán</nacionalidad>
+            <profesion>físico</profesion>
+        </ganador>
+        <area>Física</area>
+        <descripcion>Aportaciones a la física teórica</descripcion>
+    </nobel>
+    <nobel id="x005">
+        <ganador>
+            <nombre>José Echegaray</nombre>
+        </ganador>
+        <area>Literatura</area>
+        <anio>1904</anio>
+        <descripcion>Numerosas y brillantes composiciones</descripcion>
+    </nobel>
+</ganadores>

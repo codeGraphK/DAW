@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ejercicio4",
+            "request": "launch",
+            "mainClass": "Ejercicio4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ejercicio3",
+            "request": "launch",
+            "mainClass": "Ejercicio3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ejercicio2",
+            "request": "launch",
+            "mainClass": "Ejercicio2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ejercicio1",
+            "request": "launch",
+            "mainClass": "Ejercicio1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ejercicio1",
+            "request": "launch",
+            "mainClass": "ej.control2.Ejercicio1"
+        }
+    ]
+}

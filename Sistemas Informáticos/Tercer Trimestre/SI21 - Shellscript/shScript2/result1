@@ -1,0 +1,11 @@
+A=Marta
+N=3
+test $A = Marta
+echo $?
+test $A -eq Marta
+echo $?
+test $N -eq 3
+echo $?
+test "$N" = "3"
+echo $?
+

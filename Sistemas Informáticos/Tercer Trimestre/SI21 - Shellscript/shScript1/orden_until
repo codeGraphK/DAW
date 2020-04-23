@@ -1,0 +1,7 @@
+echo "Monda? (S/N)"
+read opcion
+until test $opcion = "N";
+do
+echo "Continuas dentro del until";
+echo "¿Deseas continuar (S/N)?"; read opcion;
+done

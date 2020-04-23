@@ -1,0 +1,6 @@
+read -p "Introduce un argumento: " argIn
+if test $argIn = =; then
+echo "Introduciste un igual"
+else
+echo "No introduciste un igual sino $argIn"
+fi

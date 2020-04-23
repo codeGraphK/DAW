@@ -1,0 +1,10 @@
+read -p "Introduce el nombre del archivo: " archivoIn
+if test -e $archivoIn && test -f $archivoIn; then
+echo "El archivo existe"
+if test ! -x $archivoIn; then
+chmod  ug+x $archivoIn
+else
+chmod 664 $archivoIn
+fi
+ls -l | grep $archivoIn$
+fi

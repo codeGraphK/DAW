@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.clientes.es" targetNamespace="http://www.clientes.es" elementFormDefault="qualified">
+    <xs:element name="clientes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cliente" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="direcciones" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="direccion" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ciudad" type="xs:string" />
+                                                    <xs:element name="calle" type="xs:string" />
+                                                    <xs:element name="numero" type="xs:integer" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="apellido1" type="xs:string" minOccurs="0" />
+                            <xs:element name="apellido2" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                        <xs:attribute name="idCliente" type="xs:integer" use="required" />
+                        <xs:attribute name="dni" type="xs:integer" use="required" />
+                        <xs:attribute name="localidad" type="xs:string" />
+                        <xs:attribute name="sexo" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

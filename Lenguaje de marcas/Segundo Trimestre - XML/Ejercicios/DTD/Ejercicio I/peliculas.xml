@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE peliculas SYSTEM "validate.dtd">
+<almacen>
+<peliculas>
+    <pelicula id="x001">
+        <titulo>Interstellar</titulo>
+        <duracion>169 minutos</duracion>
+        <reparto>
+            <actor>Mathew McConnaughey</actor>
+        </reparto>
+        <descripcion>
+            Gracias a un descubrimiento, un grupo de científicos y exploradores, 
+            encabezados por Cooper, se embarcan en un viaje espacial para encontrar 
+            un lugar con las condiciones necesarias para reemplazar a la Tierra y 
+            comenzar una nueva vida allí.
+        </descripcion>
+    </pelicula>
+    <pelicula id="x002">
+        <titulo>Alien</titulo>
+        <duracion>117 minutos</duracion>
+        <reparto>
+            <actor>Tom Skerrit</actor>
+            <actor>Veronica Cartwright</actor>
+        </reparto>
+        <descripcion>
+            La tripulación de la nave espacial Nostromo atiende una señal de 
+            auxilio y, sin saberlo, sube a bordo una letal forma de vida 
+            extraterrestre.
+        </descripcion>
+    </pelicula>
+</peliculas>
+<series>
+    <serie id="z001">
+    <titulo></titulo>
+    <reparto>
+        <actor></actor>
+        <actor></actor>
+        <actor></actor>
+    </reparto>
+    <temporada num="1">
+        <episodio id="ep101">
+            <descripcion>
+            </descripcion>
+            <duracion>
+            </duracion>
+        </episodio>
+        <episodio id="ep102">
+            <descripcion>
+            </descripcion>
+            <duracion>
+            </duracion>
+        </episodio>
+    </temporada>
+    <temporada num="2">
+        <episodio id="ep201">
+            <descripcion>
+            </descripcion>
+            <duracion>
+            </duracion>
+        </episodio>
+        <episodio id="ep202">
+            <descripcion>
+            </descripcion>
+            <duracion>
+            </duracion>
+        </episodio>
+    </temporada>
+    </serie>
+</series>
+</almacen>

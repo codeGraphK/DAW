@@ -1,0 +1,3 @@
+numero1=7
+test $numero1 -eq 7
+echo $?

@@ -1,0 +1,11 @@
+<!ELEMENT ganadores (nobel+)>
+<!ELEMENT nobel (ganador+, area, anio?, descripcion)>
+<!ELEMENT ganador (nombre, nacionalidad*, profesion?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT profesion (#PCDATA)>
+<!ELEMENT area (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ATTLIST nobel id ID #REQUIRED>

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: absolute;
+    min-width: min-content;
+    width: 50%;
+    height: 50%;
+    background: url(paint.jpg) no-repeat;
+    background-color: #ece9d8;
+    background-size: cover;
+}
+
+table {
+    position: absolute;
+    top: 12.5%;
+    right: 3%;
+    background-color: #ff0000;
+    width: 87.5%;
+    /* height: 64%; */
+}
+
+table, td {
+    border: 1px solid #000;
+}
+
+td {
+    width: 1px;
+    height: 10px;
+}

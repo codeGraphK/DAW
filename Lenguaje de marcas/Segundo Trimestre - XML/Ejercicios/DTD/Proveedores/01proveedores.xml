@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE proveedores SYSTEM "proveedores.dtd">
+<proveedores>
+   <proveedor>
+      <nombre>Pascal</nombre>
+      <productos>
+         <producto>Leche</producto>
+         <producto>Flan</producto>
+      </productos>
+   </proveedor>
+   <proveedor>
+      <nombre>Capit�n Pesconovo</nombre>
+      <productos>
+         <producto>Merluza</producto>
+      </productos>
+      <telefono>
+         952888777
+      </telefono>
+   </proveedor>
+</proveedores>

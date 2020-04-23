@@ -1,0 +1,4 @@
+for a in `ls | grep ^o`
+do
+echo $a;
+done

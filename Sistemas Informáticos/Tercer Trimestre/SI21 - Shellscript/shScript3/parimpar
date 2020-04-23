@@ -1,0 +1,7 @@
+read -p "Introduce un numero: " numeroIn
+if test `expr $numeroIn % 2` -eq 0; then
+echo "es par"
+else
+echo "es impar"
+fi
+

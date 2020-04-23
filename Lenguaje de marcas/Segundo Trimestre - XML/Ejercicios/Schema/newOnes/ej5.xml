@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<clientes >
+ <!--
+ idcliente es un numero de entre 3 y 15 digitos
+ dni 8 digitos y una letra
+ sexo Hombre o Mujer
+ tipo una letra
+ el contenido del elemento numero tiene que ser mayor que 0 
+ -->
+	<cliente idCliente="81422" dni="11111111a" localidad="Madrid">
+		<nombre>Antonio</nombre>
+		<direcciones>
+			<direccion>
+				casa
+				<ciudad>Málaga</ciudad>
+				<calle>Larios</calle>
+				<numero tipo="c">5</numero>
+			</direccion>
+			<direccion>
+				trabajo
+				<ciudad>Madrid</ciudad>
+				<calle>Alcalá</calle>
+				<numero tipo="c">120</numero>
+			</direccion>
+		</direcciones>
+	</cliente>
+	<cliente idCliente="81555333" dni="22222222b" sexo="Hombre">
+		<nombre>Jose Carlos</nombre>
+		<apellido1>Martínez</apellido1>
+	</cliente>
+	<cliente idCliente="81888" dni="33333333c" sexo="Mujer">
+		<nombre>Josefa</nombre>
+		<apellido1>Martín</apellido1>
+		<apellido2>Fernández</apellido2>
+	</cliente>
+</clientes>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<proveedores xmlns="http://www.proveedores.es" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.proveedores.es proveedores.xsd">
+   <proveedor>
+      <nombre>Pascal</nombre>
+      <productos>
+         <producto>Leche</producto>
+         <producto>Flan</producto>
+      </productos>
+   </proveedor>
+   <proveedor>
+      <nombre>Capit�n Pesconovo</nombre>
+      <productos>
+         <producto>Merluza</producto>
+      </productos>
+      <telefono>
+         952888777
+      </telefono>
+   </proveedor>
+</proveedores>

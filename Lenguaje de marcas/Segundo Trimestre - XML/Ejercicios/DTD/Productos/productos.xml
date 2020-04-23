@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!DOCTYPE productos SYSTEM "productos.dtd">
+<productos>
+	<producto idProducto="x100">
+		<nombre>Tomate</nombre>
+		<precio>0.6</precio>
+		<procedencia>
+			<provincia>Almeria</provincia>
+			<provincia>Jaen</provincia>
+		</procedencia>
+	</producto>
+	<producto idProducto="x101">
+		<nombre>Patata</nombre>
+		<precio>0.8</precio>
+		<procedencia>
+			<provincia>Cordoba</provincia>
+		</procedencia>
+	</producto>
+	<producto idProducto="x102">
+		<nombre>Lechuga</nombre>
+		<precio>1.2</precio>
+		<procedencia>
+			<provincia>Malaga</provincia>
+			<provincia>Sevilla</provincia>
+			<provincia>Jaen</provincia>
+		</procedencia>
+	</producto>
+</productos>

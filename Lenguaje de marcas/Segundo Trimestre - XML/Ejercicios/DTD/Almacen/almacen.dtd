@@ -1,0 +1,11 @@
+<!ELEMENT almacen (productos)>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre, precio, caracteristicas?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio EMPTY>
+<!ELEMENT caracteristicas (#PCDATA)>
+<!ATTLIST almacen empresa CDATA "">
+<!ATTLIST producto id ID #REQUIRED>
+<!ATTLIST producto nohay CDATA #IMPLIED>
+<!ATTLIST precio valor CDATA #REQUIRED>
+<!ATTLIST precio moneda (euros|pesetas) "euros">

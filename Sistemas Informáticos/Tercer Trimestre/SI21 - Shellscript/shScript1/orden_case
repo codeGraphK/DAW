@@ -1,0 +1,7 @@
+echo "Introduce un valor a evaluar"
+read a
+case $a in
+1) echo "Has pulsado la tecla 1";;
+2) echo "Has pulsado la tecla 2";;
+*) echo "No has pulsado ni 1 ni 2";;
+esac

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE videoteca SYSTEM "videoteca.dtd">
+<videoteca>
+    <cd id="x001">
+        <video type="pelicula" titulo="La monda">
+            <director></director>
+            <actores>
+                <actor nombre="" genero="F" fechanacimiento="" />
+                <actor nombre="" genero="M" fechanacimiento="" />
+            </actores>
+            <duracion></duracion>
+        </video>
+        <video type="serie" titulo="La monda conti">
+            <director></director>
+            <actores>
+                <actor nombre="" genero="F" fechanacimiento="" />
+                <actor nombre="" genero="M" fechanacimiento="" />
+            </actores>
+            <lista>
+                <episodio id="x101" type="piloto">
+                    <titulo></titulo>
+                    <duracion></duracion>
+                    <estado estrenado="si" />
+                    <fechaestreno></fechaestreno>
+                </episodio>
+            </lista>
+        </video>
+    </cd>
+</videoteca>

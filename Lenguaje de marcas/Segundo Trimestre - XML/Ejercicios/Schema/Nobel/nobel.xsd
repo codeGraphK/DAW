@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.nobel.es" xmlns="http://www.nobel.es" elementFormDefault="qualified">
+    <xs:element name="ganadores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nobel" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ganador" maxOccurs="2">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="nacionalidad" minOccurs="0" maxOccurs="2" type="xs:string" />
+                                        <xs:element name="profesion" minOccurs="0" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="area" type="xs:string" />
+                            <xs:element name="anio" type="xs:integer" minOccurs="0" />
+                            <xs:element name="descripcion" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

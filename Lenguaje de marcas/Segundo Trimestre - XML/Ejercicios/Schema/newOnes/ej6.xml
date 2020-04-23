@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<productos >
+	<!--
+	idProducto es un codigo numerico que tiene al menos 3 cifras
+	un representa las unidades y puede ser kg, unidad o gr
+	nac es un codigo de nacion con 2 caracteres en mayusculas o minusculas
+	-->
+	<producto idProducto="100">
+		tomate de rama
+		<nombre>Tomate</nombre>
+		<precio un="kg">0.6</precio>
+		<procedencia nac="es">
+			<provincia>Almeria</provincia>
+			<provincia>Jaen</provincia>
+		</procedencia>
+	</producto>
+	<producto idProducto="101">
+		la mejor patata
+		<nombre>Patata</nombre>
+		<precio un="kg">0.8</precio>
+		<procedencia nac="es">
+			<provincia>Cordoba</provincia>
+		</procedencia>
+	</producto>
+	<producto idProducto="102">
+		la lechuga rica
+		<nombre>Lechuga</nombre>
+		<precio un="unidad">1.2</precio>
+		<procedencia nac="es">
+			<provincia>Malaga</provincia>
+			<provincia>Sevilla</provincia>
+			<provincia>Jaen</provincia>
+		</procedencia>
+	</producto>
+</productos>

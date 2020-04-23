@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.productos.es" xsi:schemaLocation="http://www.productos.es productos.xsd">
+	<producto idProducto="100">
+		<nombre>Tomate</nombre>
+		<precio>0.6</precio>
+		<procedencia>
+			<provincia>Almeria</provincia>
+			<provincia>Jaen</provincia>
+		</procedencia>
+	</producto>
+	<producto idProducto="101">
+		<nombre>Patata</nombre>
+		<precio>0.8</precio>
+		<procedencia>
+			<provincia>Cordoba</provincia>
+		</procedencia>
+	</producto>
+	<producto idProducto="102">
+		<nombre>Lechuga</nombre>
+		<precio>1.2</precio>
+		<procedencia>
+			<provincia>Malaga</provincia>
+			<provincia>Sevilla</provincia>
+			<provincia>Jaen</provincia>
+		</procedencia>
+	</producto>
+</productos>

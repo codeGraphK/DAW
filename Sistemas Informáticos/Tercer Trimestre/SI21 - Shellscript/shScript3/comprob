@@ -1,0 +1,6 @@
+read -p "Introduce el nombre: " nombreIn
+if test `grep $nombreIn lista | wc -l` -ne 0; then
+echo "El nombre esta"
+else
+echo "El nombre no esta"
+fi

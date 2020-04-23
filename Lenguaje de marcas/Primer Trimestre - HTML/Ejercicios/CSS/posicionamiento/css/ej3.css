@@ -1,0 +1,20 @@
+body {
+    background-color: yellow;
+}
+table {
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    background-color: aqua;
+}
+.col1, .col2 {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    left: 22%;
+}
+img {
+    height: 12%;
+    position: relative;
+    left: 35%;
+}

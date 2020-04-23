@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+
+<!--Ejemplos de la creacion de distintos tipos de elementos
+-Elemento simple
+-Elemento simple con restriccion
+-Elemento complejo vacio
+-Elemento complejo vacio con atributos
+-Elemento complejo que tiene dentro otros elementos
+-Elemento complejo con atributos que tiene dentro otros elementos
+-Elemento complejo que tiene dentro otros elementos y texto
+-Elemento complejo con atributos que tiene dentro solo texto metodo facil
+-Elemento complejo con atributos que tiene dentro solo texto metodo dificil
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.someElements.es"
+xmlns="http://www.someElements.es"
+elementFormDefault="qualified">
+	<xs:element name="someElements"> 
+		<xs:complexType>
+			<xs:sequence>
+					
+				<!--Elemento Simple-->
+					<xs:element name="simpleElement" type="xs:string"/>
+					
+					
+				<!--Elemento Simple que puede tener numeros de 10 a 1000 (incluidos) 
+					-->
+					<xs:element name="simpleElementRestriction1">
+						<xs:simpleType>
+							<xs:restriction base="xs:integer">
+								<xs:minInclusive value="10"/>
+								<xs:maxInclusive value="1000"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					
+					
+				<!--Elemento Complejo vacio con atributos-->
+					<xs:element name="emptyComplexElementWithAtributes">
+						<xs:complexType>
+							<xs:attribute name="att1" type="xs:string"/>
+							<xs:attribute name="att2" type="xs:integer"/>
+						</xs:complexType>
+					</xs:element>
+					
+					
+				<!-- elemento Complejo que contiene solo otros elementos 
+				(los elementos contenidos pueden ser simples o complejos)-->
+					<xs:element name="complexElementContainingElements">
+						<xs:complexType>
+							<xs:sequence>
+							<!--elementos contenidos:
+							containedSimpleElement es un elemento simple
+							containedSimpleElement2 es otro elemento simple-->
+								<xs:element name="containedSimpleElement" type="xs:string"/>
+								
+								<xs:element name="containedSimpleElement2" type="xs:integer"/>
+									
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					
+					
+				<!-- elemento Complejo(con atributos)que contiene solo otros elementos -->
+					<xs:element name="complexElementContainingElementsWithAttributes">
+						<xs:complexType>
+							<xs:sequence>
+							<!--elementos contenidos:
+							containedSimpleElement es un elemento simple
+							containedEmptyComplexElement es un elemento complejo vacio
+													con atributos-->
+								<xs:element name="containedSimpleElement" type="xs:string"/>
+								
+								<xs:element name="containedEmptyComplexElement">
+									<xs:complexType>
+										<xs:attribute name="containedFirstAttribute" type="xs:string"/>
+										<xs:attribute name="containedSecondAttribute" type="xs:integer"/>
+									</xs:complexType>
+								</xs:element>
+								
+							</xs:sequence>
+							<!--aqui se ponen los atributos del elemento complejo
+							"complexElementContainingElements"-->
+							<xs:attribute name="att1" type="xs:string"/>
+							<xs:attribute name="att2" type="xs:integer"/>
+						</xs:complexType>
+					</xs:element>
+				
+				<!-- elemento Complejo que contiene otros elementos y TEXTO
+				(los elementos contenidos pueden ser simples o complejos)-->
+					<xs:element name="complexElementContainingElementsAndText">
+						<xs:complexType mixed="true">
+							<xs:sequence>
+							<!--elementos contenidos:
+							containedSimpleElement es un elemento simple
+							containedSimpleElement2 es otro elemento simple-->
+								<xs:element name="containedSimpleElement" type="xs:string"/>
+								
+								<xs:element name="containedSimpleElement2" type="xs:integer"/>
+									
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					
+				<!-- elemento complejo con atributos que contiene solo texto 
+				Metodo facil-->
+					<xs:element name="complexElementOnlyText">
+						<xs:complexType mixed="true">
+							<xs:attribute name="attrib1" type="xs:string" />
+						</xs:complexType>
+					</xs:element>
+					
+				<!-- elemento complejo con atributos que contiene solo texto 
+				Metodo dificil-->
+				
+				<xs:element name="complexElementOnlyText2">
+
+					<xs:complexType>
+					  <xs:simpleContent>
+						<xs:extension base="xs:string">
+						  <xs:attribute name="attrib1" type="xs:string" />
+						</xs:extension>
+					  </xs:simpleContent>
+					</xs:complexType> 
+				</xs:element>
+				
+				
+				
+				
+					
+					
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+</xs:schema>

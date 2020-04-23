@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.videoteca.es" targetNamespace="http://www.videoteca.es" elementFormDefault="qualified">
+    <xs:element name="videoteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cd" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="video" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="director" type="xs:string" />
+                                        <xs:element name="actores" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="actor" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="nombre" type="xs:string" />
+                                                            <xs:attribute name="genero" type="xs:string" />
+                                                            <xs:attribute name="fechanacimiento" type="xs:date" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="duracion" minOccurs="0" type="xs:string" />
+                                        <xs:element name="lista" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="episodio" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="titulo" type="xs:string" />
+                                                                <xs:element name="duracion" type="xs:string" />
+                                                                <xs:element name="estado">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="estrenado" type="xs:string" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="fechaestreno" type="xs:date" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="id" type="xs:string" use="required" />
+                                                            <xs:attribute name="type" type="xs:string" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="xs:string" use="required" />
+                                    <xs:attribute name="titulo" type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,5 @@
+Objetc, es una clase que contiene todos los tipos de datos posibles de una variable, así que si decimos que de entrada podremos recibir un tipo Object, podría ser perfectamente un tipo de variable entero, String, variable de una clase, un String, una matriz, etc.
+Claro, ya dentro del método en el que recibamos el Object, definiremos qué pasará y cómo trataremos si el objeto es un tipo de dato específico. Por ejemplo, que si Objetc instanceof Integer, sumará. Si Object instanceof String, concadenará.
+
+Herencia, la herencia de clases se realiza en la declaración de un método de una clase, en específico el constructor. Se le denomina extends, y ésto significa que lo que se construya de este método, tendrá también las características extendidas del objeto de que llamemos luego del extends.
+Por ejemplo si la clase superior es vehículo, este tendrá de constructor las variables color y matrícula. Si luego nos creamos un constructor llamado coche que tiene las variables puertas y caballos, le decimos extends vehículo y éste construirá un objeto con color, matrícula, puertas y caballos

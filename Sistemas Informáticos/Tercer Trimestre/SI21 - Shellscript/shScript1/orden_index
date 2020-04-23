@@ -1,0 +1,4 @@
+
+variable="Cadena de caracteres"
+expr index "$variable" e
+

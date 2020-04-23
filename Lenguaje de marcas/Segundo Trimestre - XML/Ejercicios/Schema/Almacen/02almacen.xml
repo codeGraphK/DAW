@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<almacen empresa="asdasd" xmlns="http://www.almacen.es" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.almacen.es almacen.xsd">
+   <productos>
+      <producto id="A191">
+         <nombre>Teclado</nombre>
+         <precio valor="20" moneda="euros" />
+         <caracteristicas>15 pulgadas</caracteristicas>
+      </producto>
+      <producto id="A167">
+         <nombre>Monitor 14'</nombre>
+         <precio valor="20000" moneda="pesetas" />
+      </producto>
+      <producto id="A180" nohay="A167">
+         <nombre>Monitor 15'</nombre>
+         <precio valor="20000" moneda="pesetas" />
+      </producto>
+   </productos>
+</almacen>
