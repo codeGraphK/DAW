@@ -345,10 +345,14 @@ INSERT INTO S (cprov, nom, ciud) VALUES ('S8', 'Pedro', 'Nueva York');
 
 CREATE TABLE PRYLONDRES (CPROYECTO)
 AS (
-    SELECT CPROY 
-    FROM SPJ
-    WHERE CPROY IN (SELECT CPROY FROM J WHERE ciudad = 'Londres')
-    OR CPROV IN (SELECT CPROV FROM S WHERE ciud = 'Londres')
+    SELECT CPROY
+    FROM J
+    WHERE CIUDAD = 'Londres'
+    OR CPROY IN (
+        SELECT CPROY
+        FROM SPJ
+        WHERE CPROV IN (SELECT CPROV FROM S WHERE ciud = 'Londres')
+    )
 );
 
-/*  Resultado: Table PRYLONDRES creado (J7) */
+/*  Resultado: Table PRYLONDRES creado (J5,J7) */
