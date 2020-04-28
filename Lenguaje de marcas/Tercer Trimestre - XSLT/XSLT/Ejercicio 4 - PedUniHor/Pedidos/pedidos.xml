@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="pedidos3.xsl" type="text/xsl"?>
+<pedidos>
+	<pedido confirmado="si">
+		<cliente>
+			<nombre>Antonio Diaz</nombre>
+			<telefono>9112341234</telefono>
+			<mail>antonio@hermanosdiaz.es</mail>
+		</cliente>
+		<productos>
+			
+			<producto disponibilidad="alta">
+				<categoria>Software</categoria>
+				<codigo>S110</codigo>
+				<descripcion>software de seguridad</descripcion>
+				<preciounidad>50</preciounidad>
+			</producto>
+			
+			<producto disponibilidad="baja">
+				<categoria>Hardware</categoria>
+				<codigo>H101</codigo>
+				<descripcion>conector vga</descripcion>
+				<preciounidad>10</preciounidad>
+			</producto>
+			<producto disponibilidad="alta">
+				<categoria>Hardware</categoria>
+				<codigo>H003</codigo>
+				<descripcion>Procesador quad core</descripcion>
+				<preciounidad>100</preciounidad>
+			</producto>
+		</productos>
+	</pedido>
+	
+	<pedido confirmado="no">
+		<cliente>
+			<nombre>Carlos Hernandez</nombre>
+			<telefono>91999999</telefono>
+			<mail>Carlos@technobit.com</mail>
+		</cliente>
+		<productos>
+		<producto disponibilidad="alta">
+				<categoria>servicio</categoria>
+				<codigo>SV01</codigo>
+				<descripcion>garantia extendida</descripcion>
+				<preciounidad>50</preciounidad>
+			</producto>
+			<producto disponibilidad="baja">
+				<categoria>hardware</categoria>
+				<codigo>H911</codigo>
+				<descripcion>monitor 21 pulgadas</descripcion>
+				<preciounidad>200</preciounidad>
+			</producto>
+			
+		</productos>
+	</pedido>
+	
+	<pedido confirmado="si">
+		<cliente>
+			<nombre>Hermann Waffel</nombre>
+			<telefono>+004533532115</telefono>
+			<mail>H.Waffel@Digitalsales.com</mail>
+		</cliente>
+		<productos>
+			<producto disponibilidad="media">
+				<categoria>software</categoria>
+				<codigo>S111</codigo>
+				<descripcion>sistema operativo</descripcion>
+				<preciounidad>50</preciounidad>
+			</producto>
+			
+			<producto disponibilidad="alta">
+				<categoria>servicio</categoria>
+				<codigo>SV04</codigo>
+				<descripcion>ayuda online</descripcion>
+				<preciounidad>8</preciounidad>
+			</producto>
+			<producto disponibilidad="alta">
+				<categoria>hardware</categoria>
+				<codigo>H003</codigo>
+				<descripcion>procesador quad core</descripcion>
+				<preciounidad>100</preciounidad>
+			</producto>
+			<producto disponibilidad="media">
+				<categoria>hardware</categoria>
+				<codigo>H661</codigo>
+				<descripcion>usb 1 Gb</descripcion>
+				<preciounidad>10</preciounidad>
+			</producto>
+			
+		</productos>
+	</pedido>
+</pedidos>

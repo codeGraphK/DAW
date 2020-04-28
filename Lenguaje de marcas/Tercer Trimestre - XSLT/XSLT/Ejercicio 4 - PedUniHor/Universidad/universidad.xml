@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Universidad2.xsl"?>
+<universidad>
+	<alumnos>
+		<alumno>
+			<nombre>Maria</nombre>
+			<apellido>Herrero</apellido>
+			<pasaporte>434235</pasaporte>
+			<pais>Argentina</pais>
+			<fechanacimiento>
+				<dia>01</dia>
+				<mes>04</mes>
+				<anio>1990</anio>
+			</fechanacimiento>
+			<matriculado asignatura="F89" nota="5"/>
+            <matriculado asignatura="A190" nota="10"/>
+            <matriculado asignatura="A1" nota="3"/>
+
+		</alumno>
+		<alumno>
+			<nombre>Marco</nombre>
+			<apellido>Lotas</apellido>
+			<DNI>54368436</DNI>
+			<fechanacimiento>
+				<dia>17</dia>
+				<mes>10</mes>
+				<anio>1987</anio>
+			</fechanacimiento>
+			<matriculado asignatura="A990" nota="4"/>
+			<matriculado asignatura="F89" nota="7"/>
+		</alumno>
+	</alumnos>
+	<profesores>
+		<profesor despacho="6" >
+			<nombre>Rubén</nombre>
+			<apellido>Sánchez</apellido>
+			<apellido>Pelegrín</apellido>
+			<asignatura codigo="F89">
+			<titulo>Lenguaje Maquina</titulo>
+			<abbr>LM</abbr>
+			<carrera>Informatica</carrera>
+			<creditos>4.5</creditos>
+			<curso>OP</curso>
+		</asignatura>
+		<asignatura codigo="A990">
+			<titulo>Programacion Avanzada Web</titulo>
+			<abbr>PAW</abbr>
+			<carrera>Informatica</carrera>
+			<creditos>4.5</creditos>
+			<curso>seminario</curso>
+		</asignatura>
+		<asignatura codigo="A1">
+			<titulo>Sistemas en red</titulo>
+			<abbr>SR</abbr>
+			<carrera>Informatica</carrera>
+			<creditos>5</creditos>
+			<curso>OB</curso>
+		</asignatura>
+		</profesor>
+		<profesor despacho="2" >
+			<nombre>Ángel </nombre>
+			<apellido>Blanco</apellido>
+			<apellido>Palo</apellido>
+			<asignatura codigo="F89">
+			<titulo>Lenguaje de programacion</titulo>
+			<abbr>LP</abbr>
+			<carrera>Informatica</carrera>
+			<creditos>4.5</creditos>
+			<curso>OP</curso>
+		</asignatura>
+		<asignatura codigo="A190">
+			<titulo>Bases de Datos</titulo>
+			<abbr>BD</abbr>
+			<carrera>Informatica</carrera>
+			<creditos>6</creditos>
+			<curso>ITCM</curso>
+		</asignatura>
+	</profesor>
+	</profesores>
+</universidad>	
+
